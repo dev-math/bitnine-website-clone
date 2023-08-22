@@ -1,3 +1,4 @@
 from os import getenv
 
 SQLALCHEMY_DATABASE_URI = getenv('SQLALCHEMY_DATABASE_URI')
+BCRYPT_LOG_ROUNDS = 13
