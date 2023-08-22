@@ -1,0 +1,3 @@
+from os import getenv
+
+SQLALCHEMY_DATABASE_URI = getenv('SQLALCHEMY_DATABASE_URI')
