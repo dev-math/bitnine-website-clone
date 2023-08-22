@@ -10,7 +10,7 @@ class Users(db.Model):
         self.email = email
         self.password = bcrypt.generate_password_hash(
             password, app.config.get("BCRYPT_LOG_ROUNDS")
-        ).decode()
+        ).decode('utf-8')
 
 
 class UsersSchema(ma.Schema):
