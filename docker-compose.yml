@@ -20,6 +20,13 @@ services:
       - db
     volumes:
       - ./server:/opt/api
+  frontend:
+    build: ./frontend
+    command: npm run dev
+    ports:
+      - 3000:3000
+    volumes:
+      - ./frontend/:/opt/frontend
 
 volumes:
   postgres_data:
